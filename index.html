@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- CSS below -->
+    <!-- reset.css -->
+    <!-- <link rel="stylesheet" type="text/css" href="reset.css"> -->
+    <!-- Bootstrap JS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Optional CSS (for fonts) -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- My stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>NYT Search App</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>NEW YORK TIMES SEARCH</h1>
+        <form>
+            <!-- <div class="form-row"> -->
+            <div class="form-group">
+                <label>Search Term</label>
+                <input type="text" class="form-control" id="searchTerm">
+            </div>
+            <!-- </div> -->
+            <div class="form-group">
+                <label>Number of Records to Retrieve</label>
+                <select id="numberRecords" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>1</option>
+                    <option>5</option>
+                    <option>10</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Start Year (Optional)</label>
+                <input type="text" class="form-control" id="startYear">
+            </div>
+            <div class="form-group">
+                <label>End Year (Optional)</label>
+                <input type="text" class="form-control" id="endYear">
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="searchBtn">Search</button>
+            <!-- change button type? -->
+            <button type="button" class="btn btn-primary">Clear Results</button>
+        </form>
+        <div class="container">
+            <section>
+                <h3 class="display-3">Top Articles</h3>
+
+
+            </section>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- JavaScript below-->
+    <!-- Optional JavaScript (for moment.js)-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <!-- jQuery (not slim) -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- My script -->
+    <!-- <script type="text/javascript" src="app.js"></script> -->
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>
